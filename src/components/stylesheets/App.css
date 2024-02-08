@@ -1,3 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* light mode */
+  --l-he-color: #E7DED2;
+  --l-fo-color: #F7F4F0;
+  --l-ba-color: #F7F4F0;
+  --l-ca-color: #E6E3D7;
+  --l-ti-color: #384720;
+  --l-pa-color: #4B3E2E;
+  /* dark mode */
+  --d-he-color: #62513C;
+  --d-fo-color: #212522;
+  --d-ba-color: #212522;
+  --d-ca-color: #8E8A78;
+  --d-ti-color: #F3F6ED;
+  --d-pa-color: #F7F4F0;
+}
+
 body {
   background-color: #F7F4F0;
 }
