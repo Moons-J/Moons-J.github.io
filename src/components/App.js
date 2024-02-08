@@ -7,8 +7,9 @@ function App() {
       <h1>🌗 Jonas Moons 🌓</h1>
       <h2>title boxes</h2>
       <p>Start of my portfolio.</p>
-      <a href="#">unpressed button</a><br/>
-      <a href="#" className="active">pressed button</a>
+      <a href="#">unpressed link</a><br/>
+      <button className="active">pressed button</button><br/>
+      <input placeHolder="Search..."></input>
     </div>
   );
   }
