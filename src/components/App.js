@@ -1,9 +1,10 @@
 // import logo from './logo.svg';
+import React from 'react';
 import './stylesheets/App.css';
 
 function App() {
   return (
-    <div className="container">
+    <div className="container App" data-theme="dark">
       <h1>🌗 Jonas Moons 🌓</h1>
       <h2>title boxes</h2>
       <p>Start of my portfolio.</p>
