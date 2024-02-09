@@ -4,6 +4,7 @@ import useLocalStorage from "use-local-storage";
 
 import './App.css';
 import { Toggle } from './Toggle'
+import Header from './Header';
 
 function App() {
   const preference = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -11,11 +12,12 @@ function App() {
 
   return (
     <div className="App" data-theme={isDark ? "dark" : "light"}>
+    <Header />
       <div className="container">
         <Toggle
           isChecked={isDark}
           handleChange={() => setIsDark(!isDark)} />
-        <h1>🌗 Jonas Moons 🌓</h1>
+        
         <h2>title boxes</h2>
         <p>Start of my portfolio.</p>
         <a href="#">unpressed link</a><br/>
