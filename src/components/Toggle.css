@@ -39,6 +39,8 @@
 
 .toggle:checked + label::after {
   content: "🌙";
+  font-size: 0.8em;
+  padding-top: 2px;
   transform: translateX(100%);
   background-color: #0c1445;
   transition: transform 250ms ease-in-out, background-color 250ms ease-in-out, content 250ms ease-in-out;
