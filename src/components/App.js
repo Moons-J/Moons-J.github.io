@@ -1,15 +1,27 @@
 // import logo from './logo.svg';
-import React from 'react';
-import './stylesheets/App.css';
+import React, { useState } from 'react';
+import useLocalStorage from "use-local-storage";
+
+import './App.css';
+import { Toggle } from './Toggle'
 
 function App() {
+  const preference = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const [isDark, setIsDark] = useLocalStorage("isDark", preference);
+
   return (
-    <div className="container App" data-theme="dark">
-      <h1>🌗 Jonas Moons 🌓</h1>
-      <h2>title boxes</h2>
-      <p>Start of my portfolio.</p>
-      <a href="#">unpressed button</a><br/>
-      <a href="#" className="active">pressed button</a>
+    <div className="App" data-theme={isDark ? "dark" : "light"}>
+      <div className="container">
+        <Toggle
+          isChecked={isDark}
+          handleChange={() => setIsDark(!isDark)} />
+        <h1>🌗 Jonas Moons 🌓</h1>
+        <h2>title boxes</h2>
+        <p>Start of my portfolio.</p>
+        <a href="#">unpressed link</a><br/>
+        <button>unpressed button</button>
+        <button className="active">pressed button</button>
+      </div>
     </div>
   );
   }
