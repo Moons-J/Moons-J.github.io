@@ -1,10 +1,12 @@
 // import logo from './logo.svg';
 import React, { useState } from 'react';
+import useLocalStorage from "use-local-storage";
+
 import './App.css';
 import { Toggle } from './Toggle'
 
 function App() {
-  const [isDark, setIsDark] = useState(true);
+  const [isDark, setIsDark] = useLocalStorage("isDark", false);
 
   return (
     <div className="App" data-theme={isDark ? "dark" : "light"}>
