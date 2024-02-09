@@ -28,12 +28,13 @@
 .toggle + label::after {
   content: "☀️";
   text-align: center;
+  padding-right: 1px;
   height: 22px;
   width: 22px;
   border-radius: 19px;
   background-color: #a9e1f8;
   position:absolute;
-  left: 0.2em;
+  left: 0.16em;
   transition: transform 250ms ease-in-out, background-color 250ms ease-in-out, content 250ms ease-in-out;
 }
 
@@ -41,7 +42,8 @@
   content: "🌙";
   font-size: 0.8em;
   padding-top: 2px;
-  transform: translateX(100%);
+  padding-left: 1px;
+  transform: translateX(113%);
   background-color: #0c1445;
   transition: transform 250ms ease-in-out, background-color 250ms ease-in-out, content 250ms ease-in-out;
 }
