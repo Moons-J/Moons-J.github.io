@@ -4,12 +4,15 @@ import './stylesheets/App.css';
 
 function App() {
   return (
-    <div className="container App" data-theme="dark">
-      <h1>🌗 Jonas Moons 🌓</h1>
-      <h2>title boxes</h2>
-      <p>Start of my portfolio.</p>
-      <a href="#">unpressed button</a><br/>
-      <a href="#" className="active">pressed button</a>
+    <div className="App" data-theme="dark">
+      <div className="container">
+        <h1>🌗 Jonas Moons 🌓</h1>
+        <h2>title boxes</h2>
+        <p>Start of my portfolio.</p>
+        <a href="#">unpressed link</a><br/>
+        <button>unpressed button</button>
+        <button className="active">pressed button</button>
+      </div>
     </div>
   );
   }
