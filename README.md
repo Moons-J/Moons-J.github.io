@@ -1,4 +1,4 @@
-Welcome to my portfolio READER file.
+Welcome to my portfolio README file.
 
 In this app I will display all my experiances as a developer.
 I will build this with React because I realy like it's work flow.
