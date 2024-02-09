@@ -5,6 +5,21 @@
   transition: background-color 0.25s ease-in-out;
   box-shadow: inset 0px -1px 10px rgba(127, 127, 127, 0.5);
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  h1 {
+    margin-bottom: 0 !important
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 15px;
+}
+
+.spacer {
+  width: 66px;
+  height:fit-content;
 }
