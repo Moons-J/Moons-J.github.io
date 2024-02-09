@@ -1,11 +1,17 @@
 // import logo from './logo.svg';
-import React from 'react';
-import './stylesheets/App.css';
+import React, { useState } from 'react';
+import './App.css';
+import { Toggle } from './Toggle'
 
 function App() {
+  const [isDark, setIsDark] = useState(true);
+
   return (
-    <div className="App" data-theme="dark">
+    <div className="App" data-theme={isDark ? "dark" : "light"}>
       <div className="container">
+        <Toggle
+          isChecked={isDark}
+          handleChange={() => setIsDark(!isDark)} />
         <h1>🌗 Jonas Moons 🌓</h1>
         <h2>title boxes</h2>
         <p>Start of my portfolio.</p>
