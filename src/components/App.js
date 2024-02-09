@@ -6,7 +6,8 @@ import './App.css';
 import { Toggle } from './Toggle'
 
 function App() {
-  const [isDark, setIsDark] = useLocalStorage("isDark", false);
+  const preference = window.matchMedia("(prefers-color-scheme: dark)").matches;
+  const [isDark, setIsDark] = useLocalStorage("isDark", preference);
 
   return (
     <div className="App" data-theme={isDark ? "dark" : "light"}>
