@@ -1,0 +1,47 @@
+.toggle-container {
+  position: absolute;
+  top: 2em ;
+  right: 2em;
+}
+
+.toggle {
+  visibility: hidden;
+}
+
+.toggle + label {
+  display: flex;
+  align-items: center;
+  font-size: 0.9em;
+  cursor: pointer;
+}
+
+.toggle + label::before {
+  content: "";
+  height: 26px;
+  width: 51px;
+  border-radius: 18px;
+  background-image: linear-gradient(to bottom, #85A94B, #495D29);
+  margin-right: 0.5em;
+  transition: transform 250ms ease-in-out;
+}
+
+.toggle + label::after {
+  content: "☀️";
+  text-align: center;
+  height: 22px;
+  width: 22px;
+  border-radius: 19px;
+  background-color: #a9e1f8;
+  position:absolute;
+  left: 0.2em;
+  transition: transform 250ms ease-in-out, background-color 250ms ease-in-out, content 250ms ease-in-out;
+}
+
+.toggle:checked + label::after {
+  content: "🌙";
+  font-size: 0.8em;
+  padding-top: 2px;
+  transform: translateX(100%);
+  background-color: #0c1445;
+  transition: transform 250ms ease-in-out, background-color 250ms ease-in-out, content 250ms ease-in-out;
+}
