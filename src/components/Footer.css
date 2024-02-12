@@ -1,3 +1,16 @@
-/* .Footer {
+.Footer {
+  min-height: 50px;
+  width: 100vw;
+  margin-top: auto;
+  background-color: var(--ba-color);
+  transition: background-color 0.25s ease-in-out;
+  display:flex;
+  justify-content: center;
+}
 
-} */
+.text-center {
+  text-align: center;
+  margin: 0px !important;
+  display: flex;
+  align-items: center;
+}

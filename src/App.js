@@ -1,10 +1,11 @@
 // import logo from './logo.svg';
-import React, { useState } from 'react';
+import React from 'react';
 import useLocalStorage from "use-local-storage";
 
 import './App.css';
-import { Toggle } from './Toggle'
-import Header from './Header';
+import { Toggle } from './components/Toggle'
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 function App() {
   const preference = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -17,13 +18,14 @@ function App() {
         <Toggle
           isChecked={isDark}
           handleChange={() => setIsDark(!isDark)} />
-        
+
         <h2>title boxes</h2>
         <p>Start of my portfolio.</p>
         <a href="#">unpressed link</a><br/>
         <button>unpressed button</button>
         <button className="active">pressed button</button>
       </div>
+      <Footer />
     </div>
   );
   }
