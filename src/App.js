@@ -21,9 +21,6 @@ function App() {
 
         <h2>title boxes</h2>
         <p>Start of my portfolio.</p>
-        <a href="#">unpressed link</a><br/>
-        <button>unpressed button</button>
-        <button className="active">pressed button</button>
       </div>
       <Footer />
     </div>
