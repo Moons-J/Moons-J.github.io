@@ -1,14 +1,7 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--ba-color);
 }
-
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-} */
 
 /* Light & Dark Mode */
 :root {
@@ -23,9 +16,30 @@ body {
   --he-color: #62513C;
   --fo-color: #212522;
   --ba-color: #212522;
-  --ca-color: #8E8A78;
+  --ca-color: #29352b;
   --ti-color: #F3F6ED;
   --pa-color: #F7F4F0;
+}
+
+/* Basic Card */
+.basic-card {
+  background-color: var(--ca-color);
+  border-radius: 16px;
+  margin-top: 20vh;
+  padding: 15px;
+  box-shadow: 0px 0px 6px var(--he-color);
+  transition: background-color 0.25s ease-in-out;
+  transition: box-shadow 0.25s ease-in-out;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.align-column {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Texts */
@@ -44,7 +58,7 @@ h2 {
   color: #F3F6ED;
   background-image: linear-gradient(to bottom, #B3936D, #62513C);
   padding: 2px 10px;
-  border-radius: 8px;
+  border-radius: 16px;
 }
 h3 {
   font-family: "Vollkorn SC", serif;
