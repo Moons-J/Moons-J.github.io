@@ -13,7 +13,7 @@
   align-items: center;
   font-size: 0.9em;
   cursor: pointer;
-  border-radius: 19px;
+  border-radius: 16px;
 }
 
 label:hover {
@@ -25,7 +25,7 @@ label:hover {
   content: "";
   height: 26px;
   width: 51px;
-  border-radius: 18px;
+  border-radius: 16px;
   background-image: linear-gradient(to bottom, #85A94B, #495D29);
   transition: transform 250ms ease-in-out;
 }
@@ -36,7 +36,7 @@ label:hover {
   padding-right: 1px;
   height: 22px;
   width: 22px;
-  border-radius: 19px;
+  border-radius: 16px;
   background-color: #a9e1f8;
   position:absolute;
   left: 0.16em;
