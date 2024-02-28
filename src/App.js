@@ -18,6 +18,8 @@ import Footer from './components/Footer';
 // Pages
 import Home from './pages/Home';
 import ErrorPage from "./pages/ErrorPage";
+import AboutMe from "./pages/AboutMe";
+import MyWork from "./pages/MyWork";
 
 function App() {
   const preference = window.matchMedia("(prefers-color-scheme: dark)").matches;
@@ -27,6 +29,14 @@ function App() {
       path: "/",
       element: <Home />,
       errorElement: <ErrorPage />,
+    },
+    {
+      path: "AboutMe",
+      element: <AboutMe />,
+    },
+    {
+      path: "MyWork",
+      element: <MyWork />,
     },
   ]);
 
