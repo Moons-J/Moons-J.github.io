@@ -1,22 +1,10 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: var(--ba-color);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Light & Dark Mode */
 :root {
-  /* light mode */
   --he-color: #E7DED2;
   --fo-color: #F7F4F0;
   --ba-color: #F7F4F0;
@@ -28,7 +16,120 @@ code {
   --he-color: #62513C;
   --fo-color: #212522;
   --ba-color: #212522;
-  --ca-color: #8E8A78;
+  --ca-color: #29352b;
   --ti-color: #F3F6ED;
   --pa-color: #F7F4F0;
+}
+
+/* Basic Card */
+.basic-card {
+  background-color: var(--ca-color);
+  border-radius: 16px;
+  margin-top: 20vh;
+  padding: 15px;
+  box-shadow: 0px 0px 6px var(--he-color);
+  transition: background-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.align-column {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Texts */
+h1 {
+  font-family: "Vollkorn SC", serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: var(--ti-color);
+  transition: color 0.25s ease-in-out;
+
+}
+h2 {
+  font-family: "Vollkorn SC", serif;
+  font-weight: bold;
+  font-size: 27px;
+  color: #F3F6ED;
+  background-image: linear-gradient(to bottom, #B3936D, #62513C);
+  padding: 2px 10px;
+  border-radius: 16px;
+}
+h3 {
+  font-family: "Vollkorn SC", serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--ti-color);
+  transition: color 0.25s ease-in-out;
+}
+h4 {
+  font-family: "Vollkorn SC", serif;
+  font-weight: 400;
+  font-size: 21px;
+  color: var(--ti-color);
+  transition: color 0.25s ease-in-out;
+}
+h5 {
+  font-family: "Vollkorn SC", serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--ti-color);
+  transition: color 0.25s ease-in-out;
+}
+h6 {
+  font-family: "Vollkorn SC", serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--ti-color);
+  transition: color 0.25s ease-in-out;
+}
+p {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  color: var(--pa-color);
+  transition: color 0.25s ease-in-out;
+}
+
+
+/* Buttons and Links */
+a, button {
+  font-family: "Vollkorn SC", serif;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+  color: #F3F6ED;
+  background-image: linear-gradient(to bottom, #85A94B, #495D29);
+  padding: 2px 10px;
+  border-radius: 16px;
+  border: 0px solid #4B3E2E;
+}
+button {
+  padding: 1px 10px !important;
+  border: 0;
+}
+.active {
+  background-image: linear-gradient(to bottom, #273216, #647F39) !important;
+  box-shadow: 0px 0px 5px rgba(173, 197, 134, 0.5), inset 4px 4px 15px rgba(0, 0, 0, 0.5) !important;
+  cursor: default !important;
+}
+
+a:hover, button:hover {
+  transition: 0.4s;
+  box-shadow: 0px 2px 6px rgb(127, 127, 127);
+}
+
+/* insert fields */
+input {
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  color: #4B3E2E;
+  background-color: #E7DED2;
+  border: 0px solid #4B3E2E;
+  border-radius: 16px;
+  padding: 2px 10px;
 }
