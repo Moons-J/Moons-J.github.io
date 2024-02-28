@@ -12,7 +12,7 @@ import './App.css';
 
 // Components
 import { Toggle } from './components/Toggle'
-import Header from './components/Header';
+import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 
 // Pages
@@ -42,7 +42,7 @@ function App() {
 
   return (
     <div className="App" data-theme={isDark ? "dark" : "light"}>
-    <Header />
+    <Navbar />
       <Toggle
         isChecked={isDark}
         handleChange={() => setIsDark(!isDark)} />

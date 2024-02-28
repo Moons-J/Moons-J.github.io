@@ -1,9 +1,9 @@
 import React from "react"
-import './Header.css'
+import './Navbar.css'
 
-const Header = (props) => {
+const Navbar = (props) => {
   return (
-    <div className='Header'>
+    <div className='Navbar'>
       <div className='menu'>
         <button>menu</button>
       </div>
@@ -13,4 +13,4 @@ const Header = (props) => {
   )
 };
 
-export default Header;
+export default Navbar;
