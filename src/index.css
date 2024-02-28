@@ -28,8 +28,8 @@ body {
   margin-top: 20vh;
   padding: 15px;
   box-shadow: 0px 0px 6px var(--he-color);
-  transition: background-color 0.25s ease-in-out;
-  transition: box-shadow 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+
 }
 .flex-center {
   display: flex;
