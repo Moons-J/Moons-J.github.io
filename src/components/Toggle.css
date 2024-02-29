@@ -1,7 +1,7 @@
 .toggle-container {
   position: absolute;
-  top: -11px ;
-  right: 14px;
+  top: -0.67em;
+  right: 0.875em;
 }
 
 .toggle {
@@ -11,9 +11,9 @@
 .toggle + label {
   display: flex;
   align-items: center;
-  font-size: 0.9em;
+  font-size: 0.8em;
   cursor: pointer;
-  border-radius: 16px;
+  border-radius: 1.25em;
 }
 
 label:hover {
@@ -24,20 +24,22 @@ label:hover {
 
 .toggle + label::before {
   content: "";
-  height: 26px;
-  width: 51px;
-  border-radius: 16px;
+  height: 2.03125em;
+  width: 3.984375em;
+  border-radius: 1.25em;
   background-image: linear-gradient(to bottom, #85A94B, #495D29);
   transition: transform var(--trans-speed) ease-in-out;
 }
 
 .toggle + label::after {
   content: "☀️";
+  padding-top: 0.15625em;
+  padding-left: 0.078125em;
   text-align: center;
-  padding-right: 1px;
-  height: 22px;
-  width: 22px;
-  border-radius: 16px;
+  padding-right: 0.078125em;
+  height: 1.71875em;
+  width: 1.71875em;
+  border-radius: 1.25em;
   background-color: #a9e1f8;
   position:absolute;
   left: 0.16em;
@@ -46,9 +48,8 @@ label:hover {
 
 .toggle:checked + label::after {
   content: "🌙";
-  font-size: 0.8em;
-  padding-top: 2px;
-  padding-left: 1px;
+  padding-top: 0.15625em;
+  padding-left: 0.078125em;
   transform: translateX(113%);
   background-color: #0c1445;
   transition: transform var(--trans-speed) ease-in-out, background-color var(--trans-speed) ease-in-out, content var(--trans-speed) ease-in-out;
