@@ -23,13 +23,6 @@ import AboutMe from "./pages/AboutMe";
 import MyWork from "./pages/MyWork";
 
 // Icons
-import { ReactComponent as MoonIcon } from "./icons/moon.svg";
-import { ReactComponent as SunIcon } from "./icons/sun.svg";
-import { ReactComponent as HomeIcon } from "./icons/home.svg";
-import { ReactComponent as AboutMeIcon } from "./icons/about-me.svg";
-import { ReactComponent as MyWorkIcon } from "./icons/my-work.svg";
-import { ReactComponent as GitHubIcon } from "./icons/github.svg";
-import { ReactComponent as LinkedInIcon } from "./icons/linkedin.svg";
 import { ReactComponent as MenuIcon } from "./icons/menu.svg";
 
 
