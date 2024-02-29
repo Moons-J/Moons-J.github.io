@@ -15,6 +15,7 @@ body {
   --ti-color: #384720;
   --pa-color: #4B3E2E;
 }
+
 [data-theme="dark"] {
   --he-color: #62513C;
   --fo-color: #212522;
@@ -24,14 +25,17 @@ body {
   --pa-color: #F7F4F0;
 }
 
+/* ---------------------------------------------------- */
 /* Basic Card */
-.basic-card, .dropdown{
+.basic-card {
   background-color: var(--ca-color);
   border-radius: 16px;
+  margin-top: 15px;
   padding: 15px;
   box-shadow: 0px 0px 6px var(--he-color);
   transition: background-color var(--trans-speed) ease-in-out, box-shadow var(--trans-speed) ease-in-out;
 }
+
 #error-page {
   .basic-card {
     margin-top: 20vh;
@@ -43,12 +47,56 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 .align-column {
   display:flex;
   flex-direction: column;
   align-items: center;
 }
 
+/* ---------------------------------------------------- */
+/* Buttons and Links */
+a, button {
+  font-family: "Vollkorn SC", serif;
+  font-weight: bold;
+  font-size: var(--font-size);
+  text-decoration: none;
+  color: #F3F6ED;
+  background-image: linear-gradient(to bottom, #85A94B, #495D29);
+  padding: 0.125em 0.625em;
+  border-radius: 1em;
+  /* border: 0px solid #4B3E2E; */
+}
+
+button {
+  padding: 1px 10px !important;
+  border: 0;
+}
+.active {
+  background-image: linear-gradient(to bottom, #273216, #647F39) !important;
+  box-shadow: 0px 0px 5px rgba(173, 197, 134, 0.5), inset 4px 4px 15px rgba(0, 0, 0, 0.5) !important;
+  cursor: default !important;
+}
+
+a:hover, button:hover {
+  transition: var(--trans-speed) ease-in-out;
+  box-shadow: 0px 0.0625em 0.25em rgb(127, 127, 127);
+  filter: brightness(1.2);
+}
+
+/* ---------------------------------------------------- */
+/* insert fields */
+input {
+  font-family: "Lato", sans-serif;
+  font-size: var(--font-size);
+  color: #4B3E2E;
+  background-color: #E7DED2;
+  border: 0px solid #4B3E2E;
+  border-radius: 16px;
+  padding: 0.125em 0.625em;
+}
+
+/* ---------------------------------------------------- */
 /* Texts */
 h1 {
   font-family: "Vollkorn SC", serif;
@@ -100,45 +148,4 @@ p {
   font-size: calc(var(--font-size) * 0.9);
   color: var(--pa-color);
   transition: color var(--trans-speed) ease-in-out;
-}
-
-
-/* Buttons and Links */
-a, button {
-  font-family: "Vollkorn SC", serif;
-  font-weight: bold;
-  font-size: var(--font-size);
-  text-decoration: none;
-  color: #F3F6ED;
-  background-image: linear-gradient(to bottom, #85A94B, #495D29);
-  padding: 0.125em 0.625em;
-  border-radius: 1em;
-  /* border: 0px solid #4B3E2E; */
-}
-
-button {
-  padding: 1px 10px !important;
-  border: 0;
-}
-.active {
-  background-image: linear-gradient(to bottom, #273216, #647F39) !important;
-  box-shadow: 0px 0px 5px rgba(173, 197, 134, 0.5), inset 4px 4px 15px rgba(0, 0, 0, 0.5) !important;
-  cursor: default !important;
-}
-
-a:hover, button:hover {
-  transition: var(--trans-speed) ease-in-out;
-  box-shadow: 0px 0.0625em 0.25em rgb(127, 127, 127);
-  filter: brightness(1.2);
-}
-
-/* insert fields */
-input {
-  font-family: "Lato", sans-serif;
-  font-size: var(--font-size);
-  color: #4B3E2E;
-  background-color: #E7DED2;
-  border: 0px solid #4B3E2E;
-  border-radius: 16px;
-  padding: 0.125em 0.625em;
 }
