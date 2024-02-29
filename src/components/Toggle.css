@@ -17,8 +17,9 @@
 }
 
 label:hover {
-  transition: 0.4s;
-  box-shadow: 0px 2px 6px rgb(127, 127, 127);
+  transition: var(--trans-speed) ease-in-out;
+  box-shadow: 0px 0.0625em 0.25em rgb(127, 127, 127);
+  filter: brightness(1.2);
 }
 
 .toggle + label::before {
@@ -27,7 +28,7 @@ label:hover {
   width: 51px;
   border-radius: 16px;
   background-image: linear-gradient(to bottom, #85A94B, #495D29);
-  transition: transform 250ms ease-in-out;
+  transition: transform var(--trans-speed) ease-in-out;
 }
 
 .toggle + label::after {
@@ -40,7 +41,7 @@ label:hover {
   background-color: #a9e1f8;
   position:absolute;
   left: 0.16em;
-  transition: transform 250ms ease-in-out, background-color 250ms ease-in-out, content 250ms ease-in-out;
+  transition: transform var(--trans-speed) ease-in-out, background-color var(--trans-speed) ease-in-out, content var(--trans-speed) ease-in-out;
 }
 
 .toggle:checked + label::after {
@@ -50,5 +51,5 @@ label:hover {
   padding-left: 1px;
   transform: translateX(113%);
   background-color: #0c1445;
-  transition: transform 250ms ease-in-out, background-color 250ms ease-in-out, content 250ms ease-in-out;
+  transition: transform var(--trans-speed) ease-in-out, background-color var(--trans-speed) ease-in-out, content var(--trans-speed) ease-in-out;
 }

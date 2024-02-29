@@ -6,6 +6,7 @@ body {
 :root {
   --nav-size: 3.125em;
   --font-size: 1em;
+  --trans-speed: 0.4s;
   /* Light & Dark Mode */
   --he-color: #E7DED2;
   --fo-color: #F7F4F0;
@@ -30,7 +31,7 @@ body {
   margin-top: 20vh;
   padding: 15px;
   box-shadow: 0px 0px 6px var(--he-color);
-  transition: background-color 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+  transition: background-color var(--trans-speed) ease-in-out, box-shadow var(--trans-speed) ease-in-out;
 
 }
 .flex-center {
@@ -50,7 +51,7 @@ h1 {
   font-weight: 400;
   font-size: calc(var(--font-size) * 1.5);
   color: var(--ti-color);
-  transition: color 0.25s ease-in-out;
+  transition: color var(--trans-speed) ease-in-out;
 
 }
 h2 {
@@ -67,34 +68,34 @@ h3 {
   font-weight: 400;
   font-size: calc(var(--font-size) * 1.3);
   color: var(--ti-color);
-  transition: color 0.25s ease-in-out;
+  transition: color var(--trans-speed) ease-in-out;
 }
 h4 {
   font-family: "Vollkorn SC", serif;
   font-weight: 400;
   font-size: calc(var(--font-size) * 1.2);
   color: var(--ti-color);
-  transition: color 0.25s ease-in-out;
+  transition: color var(--trans-speed) ease-in-out;
 }
 h5 {
   font-family: "Vollkorn SC", serif;
   font-weight: 400;
   font-size: calc(var(--font-size) * 1.1);
   color: var(--ti-color);
-  transition: color 0.25s ease-in-out;
+  transition: color var(--trans-speed) ease-in-out;
 }
 h6 {
   font-family: "Vollkorn SC", serif;
   font-weight: 400;
   font-size: calc(var(--font-size) * 1);
   color: var(--ti-color);
-  transition: color 0.25s ease-in-out;
+  transition: color var(--trans-speed) ease-in-out;
 }
 p {
   font-family: "Lato", sans-serif;
   font-size: calc(var(--font-size) * 0.9);
   color: var(--pa-color);
-  transition: color 0.25s ease-in-out;
+  transition: color var(--trans-speed) ease-in-out;
 }
 
 
@@ -109,6 +110,7 @@ a, button {
   padding: 0.125em 0.625em;
   border-radius: 1em;
   border: 0px solid #4B3E2E;
+  transition: filter var(--trans-speed) ease-in-out;
 }
 
 button {
@@ -122,8 +124,10 @@ button {
 }
 
 a:hover, button:hover {
-  transition: 0.4s;
-  box-shadow: 0px 0.125em 0.375em rgb(127, 127, 127);
+  transition: var(--trans-speed) ease-in-out;
+  transition: filter var(--trans-speed) ease-in-out;
+  box-shadow: 0px 0.0625em 0.25em rgb(127, 127, 127);
+  filter: brightness(1.2);
 }
 
 /* insert fields */
