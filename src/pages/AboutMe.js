@@ -1,7 +1,7 @@
 export default function AboutMe() {
   return (
-    <div>
-      <h1>Welcome to my about me page!</h1>
+    <div className="basic-card">
+      <h1>Welcome to the about me page!</h1>
     </div>
   );
 }

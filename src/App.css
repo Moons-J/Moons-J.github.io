@@ -5,5 +5,5 @@
   flex-direction: column;
   align-items: center;
   background-color: var(--ba-color);
-  transition: background-color 0.25s ease-in-out;
+  transition: background-color var(--trans-speed) ease-in-out;
 }

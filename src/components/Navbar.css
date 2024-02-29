@@ -1,0 +1,43 @@
+.navbar {
+  min-height: 3.125em;
+  background-color: var(--ca-color);
+  width: 100vw;
+  transition: background-color var(--trans-speed) ease-in-out;
+  box-shadow: 0px 2px 5px rgba(127, 127, 127, 0.5);
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  align-items: center;
+  li {
+    list-style-type: none;
+  };
+  ul {
+    margin: 0px !important;
+    padding: 0px 0px 0px 14px !important;
+  };
+  h1 {
+    margin-bottom: 0 !important
+  };
+}
+
+.menu {
+  position: absolute;
+  top: 0.75em ;
+  right: 4.875em;
+}
+
+.spacer {
+  width: 7.6em;
+  height: 1.625em;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+  font-size: var(--font-size);
+  visibility: hidden;
+}
+
+.phone-spacer {
+  padding-top: 0.2em;
+  padding-left: 1em;
+  padding-right: 0.6em;
+  margin: 0px !important;
+}

@@ -1,9 +1,9 @@
-.Footer {
+.footer {
   min-height: 50px;
   width: 100vw;
   margin-top: auto;
   background-color: var(--ba-color);
-  transition: background-color 0.25s ease-in-out;
+  transition: background-color var(--trans-speed) ease-in-out;
   display:flex;
   justify-content: center;
 }
