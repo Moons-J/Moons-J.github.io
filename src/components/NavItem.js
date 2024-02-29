@@ -1,5 +1,5 @@
-import React, { useState } from "react"
-import './NavItem.css'
+import React, { useState } from "react";
+import './NavItem.css';
 
 import { ReactComponent as HomeIcon } from "../icons/home.svg";
 import { ReactComponent as AboutMeIcon } from "../icons/about-me.svg";
@@ -23,7 +23,7 @@ function DropdownMenu() {
 
   function DropdownItem(props) {
     return (
-      <a href="#" className="menu-item">
+      <a href={props.path} className="menu-item">
         <span className="icon-button">{props.leftIcon}</span>
         {props.children}
         <span className="icon-right">{props.rightIcon}</span>
@@ -34,9 +34,9 @@ function DropdownMenu() {
   return (
   <div className="dropdown">
     <div className="items">
-      <DropdownItem leftIcon={<HomeIcon />} className="active">home</DropdownItem>
-      <DropdownItem leftIcon={<AboutMeIcon />}>about me</DropdownItem>
-      <DropdownItem leftIcon={<MyWorkIcon />}>my work</DropdownItem>
+      <DropdownItem path="/" leftIcon={<HomeIcon />}>home</DropdownItem>
+      <DropdownItem path="/aboutme" leftIcon={<AboutMeIcon />}>about me</DropdownItem>
+      <DropdownItem path="/mywork" leftIcon={<MyWorkIcon />}>my work</DropdownItem>
       </div>
   </div>
   );
