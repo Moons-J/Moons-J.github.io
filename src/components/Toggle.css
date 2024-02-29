@@ -40,7 +40,7 @@ label:hover {
   height: 1.71875em;
   width: 1.71875em;
   border-radius: 1.25em;
-  background-color: #a9e1f8;
+  background-color: #5cd9ff;
   position:absolute;
   left: 0.16em;
   transition: transform var(--trans-speed) ease-in-out, background-color var(--trans-speed) ease-in-out, content var(--trans-speed) ease-in-out;

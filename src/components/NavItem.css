@@ -1,0 +1,30 @@
+.nav-item {
+
+  svg {
+    height: calc(var(--font-size) * 1.45);
+    width: calc(var(--font-size) * 1.45);
+    fill: #F3F6ED !important;
+  };
+}
+
+.dropdown {
+  position: absolute;
+  top: 2.1em;
+  width: 12em;
+  transform: translateX(-46%);
+  overflow: hidden;
+  .items {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+.menu-item {
+  height: 2.1875em;
+  display: flex;
+  gap: 0.5em;
+  align-items: center;
+  padding: 0.5em;
+  justify-content: space-between;
+}

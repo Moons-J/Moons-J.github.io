@@ -56,15 +56,19 @@ function App() {
 
   return (
     <div className="App" data-theme={isDark ? "dark" : "light"}>
-    <Navbar />
-      <Toggle
-        isChecked={isDark}
-        handleChange={() => setIsDark(!isDark)} />
-      <div className="container">
-        <RouterProvider router={router} />
+        <Navbar>
+          <NavItem icon={<MenuIcon />}>
+            <DropdownMenu></DropdownMenu>
+          </NavItem>
+        </Navbar>
+        <Toggle
+          isChecked={isDark}
+          handleChange={() => setIsDark(!isDark)} />
+        <div className="container">
+          <RouterProvider router={router} />
+        </div>
+        <Footer />
       </div>
-      <Footer />
-    </div>
   );
 }
 
