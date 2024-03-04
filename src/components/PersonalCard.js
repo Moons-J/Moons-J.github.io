@@ -2,6 +2,12 @@ import React from "react"
 import './PersonalCard.css'
 import image from '../JM.JPG'
 
+// icons
+import { ReactComponent as LinkedInIcon } from '../icons/linkedin.svg'
+import { ReactComponent as GitHubIcon } from '../icons/github.svg'
+import { ReactComponent as WhatsAppIcon } from '../icons/whatsapp.svg'
+import { ReactComponent as EmailIcon } from '../icons/email.svg'
+
 const PersonalCard = (props) => {
   var fullUrl = window.location.href;
   var url = fullUrl.split('/').pop();
@@ -37,6 +43,13 @@ const PersonalCard = (props) => {
            projects and make a meaningful impact.
         </p>
         <button className="story-button" onClick={toggleStory}>read more</button>
+      </div>
+      <div className="contact">
+        <h3>Contact me:</h3>
+          <a href="https://www.linkedin.com/in/jonas-moons-232538285/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+          <a href="https://github.com/Moons-J" target="_blank" rel="noreferrer"><GitHubIcon/></a>
+          <a href="https://wa.me/+34654229630" target="_blank" rel="noreferrer"><WhatsAppIcon/></a>
+          <a href="mailto: jonas_jobs@icloud.com" target="_blank" rel="noreferrer"><EmailIcon/></a>
       </div>
     </div>
   );

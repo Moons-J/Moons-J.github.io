@@ -40,3 +40,20 @@
   height:  80px;
   overflow-y: hidden;
 }
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.1875em !important;
+    width: 2.1875em !important;
+    padding: 0px !important;
+  }
+}
