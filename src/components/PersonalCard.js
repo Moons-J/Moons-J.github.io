@@ -34,7 +34,7 @@ const PersonalCard = (props) => {
           <button>certificates</button>
           <button>awards</button>
       </div>
-      <div className="flex-center column">
+      <div className="align-column">
         <p className="story hidden"><h4>Story:</h4>Greetings! 👋🤩 I'm Jonas, a Junior full-stack developer and former quality expert in communication.
            On the 8th of December 2023, I completed the Le Wagon Full-Stack Developer Bootcamp.
            Enthusiastic and eager to learn, I bring a unique blend of technical skills and
@@ -46,10 +46,12 @@ const PersonalCard = (props) => {
       </div>
       <div className="contact">
         <h3>Contact me:</h3>
-          <a href="https://www.linkedin.com/in/jonas-moons-232538285/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
-          <a href="https://github.com/Moons-J" target="_blank" rel="noreferrer"><GitHubIcon/></a>
-          <a href="https://wa.me/+34654229630" target="_blank" rel="noreferrer"><WhatsAppIcon/></a>
-          <a href="mailto: jonas_jobs@icloud.com" target="_blank" rel="noreferrer"><EmailIcon/></a>
+          <div className="align-row">
+            <a href="https://www.linkedin.com/in/jonas-moons-232538285/" target="_blank" rel="noreferrer"><LinkedInIcon/></a>
+            <a href="https://github.com/Moons-J" target="_blank" rel="noreferrer"><GitHubIcon/></a>
+            <a href="https://wa.me/+34654229630" target="_blank" rel="noreferrer"><WhatsAppIcon/></a>
+            <a href="mailto: jonas_jobs@icloud.com" target="_blank" rel="noreferrer"><EmailIcon/></a>
+          </div>
       </div>
     </div>
   );

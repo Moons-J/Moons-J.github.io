@@ -45,15 +45,22 @@ body {
   gap: 16px;
 }
 
-.column {
-  flex-direction: column
+.align-row {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .align-column {
   display:flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 /* ---------------------------------------------------- */
