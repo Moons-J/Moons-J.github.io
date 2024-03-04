@@ -1,12 +1,36 @@
 .personal-card {
+  max-width: 380px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  align-content: flex-start;
+}
 
+.p-card-header {
+  width: 100%;
+  max-width: 200px;
+}
+
+.img-header {
+  border-radius: 0em 0em 8px 8px;
 }
 
 #head-shot {
-  width: 200px;
-  height: 200px;
+  /* max-height: 200px; */
+  width: 100%;
+  max-height: 170px;
+  /* object-fit: contain; */
+  height: auto;
   object-fit: cover;
   border-radius: 8px 8px 0em 0em;
   filter: brightness(var(--img-bright));
   transition: filter var(--trans-speed) ease-in-out;
+}
+
+.personal-menu {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 16px;
 }
