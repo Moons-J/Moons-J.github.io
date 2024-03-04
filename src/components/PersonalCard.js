@@ -53,6 +53,7 @@ const PersonalCard = (props) => {
             <a href="mailto: jonas_jobs@icloud.com" target="_blank" rel="noreferrer"><EmailIcon/></a>
           </div>
       </div>
+      <a href="../dowloadable/JM CV Full Stack.pdf" download="Jonas Moons Full Stack Web Developer CV">download my CV here.</a>
     </div>
   );
 };
