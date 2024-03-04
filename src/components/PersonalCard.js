@@ -5,6 +5,18 @@ import image from '../JM.JPG'
 const PersonalCard = (props) => {
   var fullUrl = window.location.href;
   var url = fullUrl.split('/').pop();
+
+  const toggleStory = () => {
+    const story = document.querySelector('.story');
+    story.classList.toggle('hidden');
+    const button = document.querySelector('.story-button');
+    if (story.classList.contains('hidden')) {
+      button.textContent = 'read more';
+      return;
+    }
+    button.textContent = 'show less';
+  };
+
   return (
     <div className='personal-card basic-card'>
       <div className="p-card-header">
@@ -16,14 +28,15 @@ const PersonalCard = (props) => {
           <button>certificates</button>
           <button>awards</button>
       </div>
-      <div>
-        <h6>Story:</h6>
-        <p>Greeting! 👋🤩 I'm Jonas, Junior full-stack developer and former quality expert in communication.
-Recently completed the Le Wagon Full-Stack Developer Bootcamp.
-Enthusiastic and eager to learn, I bring a unique blend of technical skills and
-effective communication. Committed to continuous improvement and staying
-current in the ever-evolving tech world. Excited to contribute to innovative
-projects and make a meaningful impact.</p>
+      <div className="flex-center column">
+        <p className="story hidden"><h4>Story:</h4>Greetings! 👋🤩 I'm Jonas, a Junior full-stack developer and former quality expert in communication.
+           On the 8th of December 2023, I completed the Le Wagon Full-Stack Developer Bootcamp.
+           Enthusiastic and eager to learn, I bring a unique blend of technical skills and
+           effective communication. Committed to continuous improvement and staying
+           current in the ever-evolving tech world. Excited to contribute to innovative
+           projects and make a meaningful impact.
+        </p>
+        <button className="story-button" onClick={toggleStory}>read more</button>
       </div>
     </div>
   );
