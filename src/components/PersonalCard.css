@@ -1,0 +1,12 @@
+.personal-card {
+
+}
+
+#head-shot {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0em 0em;
+  filter: brightness(var(--img-bright));
+  transition: filter var(--trans-speed) ease-in-out;
+}
