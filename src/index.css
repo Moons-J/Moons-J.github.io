@@ -87,6 +87,14 @@ a:hover, button:hover {
 }
 
 /* ---------------------------------------------------- */
+/* Icon */
+svg {
+  height: calc(var(--font-size) * 1.45);
+  width: calc(var(--font-size) * 1.45);
+  fill: #F3F6ED !important;
+};
+
+/* ---------------------------------------------------- */
 /* insert fields */
 input {
   font-family: "Lato", sans-serif;
