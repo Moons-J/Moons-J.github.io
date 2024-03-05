@@ -7,8 +7,8 @@ const HomeCard = (props) => {
     <div className='home-card basic-card flex-center align-column'>
       <h2>welcome</h2>
       <h3>to the Portfolio of Jonas Moons.</h3>
-      <a href="/aboutme">about me</a>
-      <a href="/mywork">my work</a>
+      <a href="/about-me">about me</a>
+      <a href="/my-work">my work</a>
     </div>
   )
 };

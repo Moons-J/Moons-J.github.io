@@ -35,8 +35,8 @@ function DropdownMenu() {
   <div className="dropdown">
     <div className="items">
       <DropdownItem path="/" leftIcon={<HomeIcon />}>home</DropdownItem>
-      <DropdownItem path="/aboutme" leftIcon={<AboutMeIcon />}>about me</DropdownItem>
-      <DropdownItem path="/mywork" leftIcon={<MyWorkIcon />}>my work</DropdownItem>
+      <DropdownItem path="/about-me" leftIcon={<AboutMeIcon />}>about me</DropdownItem>
+      <DropdownItem path="/my-work" leftIcon={<MyWorkIcon />}>my work</DropdownItem>
       </div>
   </div>
   );

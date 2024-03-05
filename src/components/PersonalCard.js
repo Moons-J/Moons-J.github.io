@@ -10,7 +10,8 @@ import { ReactComponent as EmailIcon } from '../icons/email.svg'
 
 const PersonalCard = (props) => {
   var fullUrl = window.location.href;
-  var url = fullUrl.split('/').pop();
+  var path = fullUrl.split('/').pop();
+  var pathTitle = path.split('-').join(' ');
 
   const toggleStory = () => {
     const story = document.querySelector('.story');
@@ -27,7 +28,7 @@ const PersonalCard = (props) => {
     <div className='personal-card basic-card'>
       <div className="p-card-header">
         <img id="head-shot" src={image} alt="Head shot of Jonas Moons" />
-        <h2 className="img-header">{url}</h2>
+        <h2 className="img-header">{pathTitle}</h2>
       </div>
       <div className="personal-menu">
           <button>skills</button>
@@ -35,7 +36,8 @@ const PersonalCard = (props) => {
           <button>awards</button>
       </div>
       <div className="align-column">
-        <p className="story hidden"><h4>Story:</h4>Greetings! 👋🤩 I'm Jonas, a Junior full-stack developer and former quality expert in communication.
+      <h4>Story:</h4>
+        <p className="story hidden">Greetings! 👋🤩 I'm Jonas, a Junior full-stack developer and former quality expert in communication.
            On the 8th of December 2023, I completed the Le Wagon Full-Stack Developer Bootcamp.
            Enthusiastic and eager to learn, I bring a unique blend of technical skills and
            effective communication. Committed to continuous improvement and staying

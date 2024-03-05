@@ -38,11 +38,11 @@ function App() {
       errorElement: <ErrorPage />,
     },
     {
-      path: "AboutMe",
+      path: "about-me",
       element: <AboutMe />,
     },
     {
-      path: "MyWork",
+      path: "my-work",
       element: <MyWork />,
     },
   ]);
