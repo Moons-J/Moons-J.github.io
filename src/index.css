@@ -63,6 +63,15 @@ body {
   gap: 16px;
 }
 
+.card-img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  filter: brightness(var(--img-bright));
+  transition: filter var(--trans-speed) ease-in-out;
+}
+
 /* ---------------------------------------------------- */
 /* Buttons and Links */
 a, button {
