@@ -1,5 +1,6 @@
 .personal-card {
   max-width: 380px;
+  height: fit-content;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
