@@ -23,6 +23,7 @@ const PersonalCard = (props) => {
     }
     button.textContent = 'show less';
   };
+
   const toggleButtons = (event) => {
     const buttons = document.querySelectorAll('.about-button');
     buttons.forEach(button => {
@@ -50,6 +51,7 @@ const PersonalCard = (props) => {
            effective communication. Committed to continuous improvement and staying
            current in the ever-evolving tech world. Excited to contribute to innovative
            projects and make a meaningful impact.
+           Please feel free to contact me for any questions or opportunities.
         </p>
         <button className="story-button" onClick={toggleStory}>read more</button>
       </div>
