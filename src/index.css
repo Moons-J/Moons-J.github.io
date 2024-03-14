@@ -1,6 +1,12 @@
 body {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: black;
+  transition: background-color var(--trans-speed) ease-in-out;
 }
 
 :root {
@@ -33,7 +39,6 @@ body {
 .basic-card {
   background-color: var(--ca-color);
   border-radius: 16px;
-  margin-top: 16px;
   padding: 16px;
   transition: background-color var(--trans-speed) ease-in-out;
 }
@@ -63,9 +68,18 @@ body {
   gap: 16px;
 }
 
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  align-content: flex-start;
+}
+
 .card-img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   object-fit: cover;
   border-radius: 8px;
   filter: brightness(var(--img-bright));
