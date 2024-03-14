@@ -23,6 +23,13 @@ const PersonalCard = (props) => {
     }
     button.textContent = 'show less';
   };
+  const toggleButtons = (event) => {
+    const buttons = document.querySelectorAll('.about-button');
+    buttons.forEach(button => {
+      button.classList.remove('active');
+    });
+    event.target.classList.add('active');
+  }
 
   return (
     <div className='personal-card basic-card'>
@@ -31,9 +38,9 @@ const PersonalCard = (props) => {
         <h2 className="img-header">{pathTitle}</h2>
       </div>
       <div className="personal-menu">
-          <button>skills</button>
-          <button>certificates</button>
-          <button>awards</button>
+          <button className="about-button active" onClick={toggleButtons}>skills</button>
+          <button className="about-button" onClick={toggleButtons}>certificates</button>
+          <button className="about-button" onClick={toggleButtons}>awards</button>
       </div>
       <div className="align-column">
       <h4>Story:</h4>
