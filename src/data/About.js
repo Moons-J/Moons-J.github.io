@@ -1,19 +1,38 @@
+// import React from 'react'
+// import { ReactComponent as MenuIcon } from ".";
+
 const skills = [
   {
     id: 1,
-    img: "../data/data_icons/standard.svg",
+    img: require("../data/data_icons/standard.svg").default,
     title: "JavaScript, HTML, CSS",
-    origin: "Learned at Le Wagon.",
-    extra: "Used all over my projects.",
-    date: "10/2023"
+    origin: "Le Wagon Barcelona.",
+    extra: "All projects.",
+    date: "10/09/2023"
   },
   {
     id: 2,
-    img: "../data/data_icons/ruby.svg",
+    img: require("../data/data_icons/ruby.svg").default,
     title: 'Ruby and Ruby on Rails',
-    origin: 'Learned at Le Wagon.',
-    extra: 'Used in My New Meal Plan.',
-    date: '10/2023'
+    origin: 'Le Wagon Barcelona.',
+    extra: 'My New Meal Plan.',
+    date: '10/09/2023'
+  },
+  {
+    id: 3,
+    img: require("../data/data_icons/node-js.svg").default,
+    title: 'Node JS',
+    origin: 'Le Wagon Barcelona.',
+    extra: 'Portfolio & My New Meal Plan.',
+    date: '10/09/2023'
+  },
+  {
+    id: 4,
+    img: require("../data/data_icons/react.svg").default,
+    title: "React",
+    origin: 'Self Study.',
+    extra: "Portfolio.",
+    date: '02/07/2024'
   },
 ]
 
