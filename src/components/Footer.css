@@ -1,11 +1,12 @@
 .footer {
   min-height: 50px;
   width: 100vw;
-  margin-top: auto;
+  margin-top: 16px;
   background-color: var(--ba-color);
   transition: background-color var(--trans-speed) ease-in-out;
   display:flex;
   justify-content: center;
+  bottom: 0;
 }
 
 .text-center {
