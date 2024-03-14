@@ -7,9 +7,7 @@ export default function AboutMe() {
     // main div horizontal
     <div className="main-container">
       <PersonalCard />
-      <div>
       <AboutCard />
-      </div>
     </div>
   );
 }
