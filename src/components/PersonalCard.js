@@ -27,9 +27,9 @@ const PersonalCard = (props) => {
   const toggleButtons = (event) => {
     const buttons = document.querySelectorAll('.about-button');
     buttons.forEach(button => {
-      button.classList.remove('active');
+      button.classList.remove('disabled');
     });
-    event.target.classList.add('active');
+    event.target.classList.add('disabled');
   }
 
   return (
@@ -39,7 +39,7 @@ const PersonalCard = (props) => {
         <h2 className="img-header">{pathTitle}</h2>
       </div>
       <div className="personal-menu">
-          <button className="about-button active" onClick={toggleButtons}>skills</button>
+          <button className="about-button disabled" onClick={toggleButtons}>skills</button>
           <button className="about-button" onClick={toggleButtons}>certificates</button>
           <button className="about-button" onClick={toggleButtons}>awards</button>
       </div>
