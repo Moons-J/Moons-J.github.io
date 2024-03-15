@@ -1,6 +1,7 @@
 import React from "react"
 import './PersonalCard.css'
 import image from '../JM.JPG'
+import toggleCards from './AboutCard'
 
 // icons
 import { ReactComponent as LinkedInIcon } from '../icons/linkedin.svg'
@@ -27,9 +28,10 @@ const PersonalCard = (props) => {
   const toggleButtons = (event) => {
     const buttons = document.querySelectorAll('.about-button');
     buttons.forEach(button => {
-      button.classList.remove('disabled');
+      button.disabled = false;
     });
-    event.target.classList.add('disabled');
+    event.target.disabled = true;
+    toggleCards(event.target.textContent);
   }
 
   return (
@@ -39,7 +41,7 @@ const PersonalCard = (props) => {
         <h2 className="img-header">{pathTitle}</h2>
       </div>
       <div className="personal-menu">
-          <button className="about-button disabled" onClick={toggleButtons}>skills</button>
+          <button className="about-button" onClick={toggleButtons}>skills</button>
           <button className="about-button" onClick={toggleButtons}>certificates</button>
           <button className="about-button" onClick={toggleButtons}>awards</button>
       </div>
