@@ -1,6 +1,6 @@
 .footer {
   min-height: 50px;
-  width: 100vw;
+  width: 100%;
   margin-top: 16px;
   background-color: var(--ba-color);
   transition: background-color var(--trans-speed) ease-in-out;

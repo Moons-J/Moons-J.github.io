@@ -24,15 +24,15 @@ const AboutCard = (props) => {
     </div>
   )
 };
-function createCard(skills) {
+function createCard(props) {
   return (
     <AboutCard
-      key={skills.id}
-      img={skills.img}
-      title={skills.title}
-      origin={skills.origin}
-      extra={skills.extra}
-      date={skills.date}
+      key={props.id}
+      img={props.img}
+      title={props.title}
+      origin={props.origin}
+      extra={props.extra}
+      date={props.date}
     />
   );
 }

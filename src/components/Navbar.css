@@ -2,7 +2,7 @@
   min-height: 3.125em;
   margin-bottom: 16px;
   background-color: var(--ca-color);
-  width: 100vw;
+  width: 100%;
   transition: background-color var(--trans-speed) ease-in-out;
   box-shadow: 0px 2px 5px rgba(127, 127, 127, 0.5);
   display: flex;
