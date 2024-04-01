@@ -36,4 +36,26 @@ const skills = [
   },
 ]
 
-export { skills }
+const certificates = [
+  {
+    id: 1,
+    img: '',
+    title: 'Test Certificate',
+    origin: '',
+    extra: '',
+    date: ''
+  },
+]
+
+const awards = [
+  {
+    id: 1,
+    img: '',
+    title: 'Test Award',
+    origin: '',
+    extra: '',
+    date: ''
+  },
+]
+
+export { skills, certificates, awards }
