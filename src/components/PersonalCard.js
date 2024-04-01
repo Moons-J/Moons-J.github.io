@@ -1,13 +1,14 @@
 import React from "react"
 import './PersonalCard.css'
 import image from '../JM.JPG'
-import toggleCards from './AboutCard'
+import { PersonalCardMenu } from "./PersonalCardMenu"
 
 // icons
 import { ReactComponent as LinkedInIcon } from '../icons/linkedin.svg'
 import { ReactComponent as GitHubIcon } from '../icons/github.svg'
 import { ReactComponent as WhatsAppIcon } from '../icons/whatsapp.svg'
 import { ReactComponent as EmailIcon } from '../icons/email.svg'
+
 
 const PersonalCard = (props) => {
   var fullUrl = window.location.href;
@@ -25,15 +26,6 @@ const PersonalCard = (props) => {
     button.textContent = 'show less';
   };
 
-  const toggleButtons = (event) => {
-    const buttons = document.querySelectorAll('.about-button');
-    buttons.forEach(button => {
-      button.disabled = false;
-    });
-    event.target.disabled = true;
-    toggleCards(event.target.textContent);
-  }
-
   return (
     <div className='personal-card basic-card'>
       <div className="p-card-header">
@@ -41,9 +33,7 @@ const PersonalCard = (props) => {
         <h2 className="img-header">{pathTitle}</h2>
       </div>
       <div className="personal-menu">
-          <button className="about-button" onClick={toggleButtons}>skills</button>
-          <button className="about-button" onClick={toggleButtons}>certificates</button>
-          <button className="about-button" onClick={toggleButtons}>awards</button>
+        <PersonalCardMenu buttonFunction={props.buttonFunction}/>
       </div>
       <div className="align-column">
       <h4>Story:</h4>
@@ -53,7 +43,8 @@ const PersonalCard = (props) => {
            effective communication. Committed to continuous improvement and staying
            current in the ever-evolving tech world. Excited to contribute to innovative
            projects and make a meaningful impact.
-           Please feel free to contact me for any questions or opportunities.
+           Please feel free to contact me for any questions.
+           Thank you for reading. 😇
         </p>
         <button className="story-button" onClick={toggleStory}>read more</button>
       </div>
