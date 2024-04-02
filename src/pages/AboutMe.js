@@ -27,12 +27,12 @@ export default function AboutMe() {
     return
   };
 
-  useEffect(() => {
-    // Code to handle rerendering of cards when data changes
-    console.log(data);
+  // useEffect(() => {
+  //   // Code to handle rerendering of cards when data changes
+  //   console.log(data);
 
-    // optional return function
-  }, [data]); // the button in menu
+  //   // optional return function
+  // }, [data]); // the button in menu
 
   return (
     <div className="main-container">
