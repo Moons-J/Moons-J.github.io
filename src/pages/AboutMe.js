@@ -35,7 +35,7 @@ export default function AboutMe() {
   // }, [data]); // the button in menu
 
   return (
-    <div className="main-container" style={{ flexWrap: window.innerWidth < 550 ? 'wrap' : 'nowrap' }}>
+    <div className="main-container" style={{ flexWrap: window.innerWidth < 519 ? 'wrap' : 'nowrap' }}>
       <PersonalCard buttonFunction={buttonFunction} />
       <div className="card-container">
         <CreateCard data={data}/>
