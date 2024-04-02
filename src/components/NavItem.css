@@ -9,6 +9,7 @@
   width: 12em;
   transform: translateX(-46%);
   overflow: hidden;
+  z-index: 1;
 
   .items {
     display: flex;

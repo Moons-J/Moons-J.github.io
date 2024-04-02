@@ -27,7 +27,7 @@ const PersonalCard = (props) => {
   };
 
   return (
-    <div className='personal-card basic-card'>
+    <div className='personal-card basic-card' style={{ maxWidth: window.innerWidth < 768 ? '232px' : '380px' }}>
       <div className="p-card-header">
         <img id="head-shot" src={image} alt="Head shot of Jonas Moons" />
         <h2 className="img-header">{pathTitle}</h2>

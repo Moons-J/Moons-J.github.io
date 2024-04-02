@@ -7,6 +7,8 @@
   flex-direction: column;
   justify-content: space-between;
   overflow: auto;
+  height: 100vh;
+  width: 100vw;
   background-color: var(--ba-color);
   transition: background-color var(--trans-speed) ease-in-out;
 }

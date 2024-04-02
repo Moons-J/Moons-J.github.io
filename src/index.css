@@ -1,12 +1,10 @@
 body {
-  height: 100%;
-  width: 100%;
+
   padding: 0;
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
-  transition: background-color var(--trans-speed) ease-in-out;
+  background-color: var(--ba-color);
 }
 
 :root {
@@ -15,7 +13,6 @@ body {
   --trans-speed: 0.4s;
   --img-bright: 1;
 
-  /* Light & Dark Mode */
   --he-color: #E7DED2;
   --fo-color: #F7F4F0;
   --ba-color: #F7F4F0;
@@ -35,7 +32,7 @@ body {
 }
 
 /* ---------------------------------------------------- */
-/* Card */
+/* Cards */
 .basic-card {
   background-color: var(--ca-color);
   border-radius: 16px;
@@ -68,6 +65,17 @@ body {
   gap: 16px;
 }
 
+.card-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  filter: brightness(var(--img-bright));
+  transition: filter var(--trans-speed) ease-in-out;
+}
+
+/* ---------------------------------------------------- */
+/* Containers */
 .card-container {
   display: flex;
   flex-direction: row;
@@ -77,13 +85,11 @@ body {
   align-content: flex-start;
 }
 
-.card-img {
-  width: 100px;
-  height: 100px;
-  object-fit: cover;
-  border-radius: 8px;
-  filter: brightness(var(--img-bright));
-  transition: filter var(--trans-speed) ease-in-out;
+.main-container {
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 16px;
 }
 
 /* ---------------------------------------------------- */
