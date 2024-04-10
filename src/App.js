@@ -1,10 +1,7 @@
 // NPM's
 import React from 'react';
 // import ReactDOM from 'react-dom/client';
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import useLocalStorage from "use-local-storage";
 
 // Styles
@@ -38,11 +35,11 @@ function App() {
       errorElement: <ErrorPage />,
     },
     {
-      path: "AboutMe",
+      path: "about-me",
       element: <AboutMe />,
     },
     {
-      path: "MyWork",
+      path: "my-work",
       element: <MyWork />,
     },
   ]);

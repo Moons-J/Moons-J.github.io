@@ -1,13 +1,18 @@
 body {
+
+  padding: 0;
+  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: var(--ba-color);
 }
 
 :root {
   --nav-size: 3.125em;
   --font-size: 1em;
   --trans-speed: 0.4s;
-  /* Light & Dark Mode */
+  --img-bright: 1;
+
   --he-color: #E7DED2;
   --fo-color: #F7F4F0;
   --ba-color: #F7F4F0;
@@ -23,35 +28,68 @@ body {
   --ca-color: #29352b;
   --ti-color: #F3F6ED;
   --pa-color: #F7F4F0;
+  --img-bright: 0.75;
 }
 
 /* ---------------------------------------------------- */
-/* Basic Card */
+/* Cards */
 .basic-card {
   background-color: var(--ca-color);
   border-radius: 16px;
-  margin-top: 15px;
-  padding: 15px;
-  box-shadow: 0px 0px 6px var(--he-color);
-  transition: background-color var(--trans-speed) ease-in-out, box-shadow var(--trans-speed) ease-in-out;
-}
-
-#error-page {
-  .basic-card {
-    margin-top: 20vh;
-  }
+  padding: 16px;
+  transition: background-color var(--trans-speed) ease-in-out;
 }
 
 .flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 16px;
+}
+
+.align-row {
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
 }
 
 .align-column {
   display:flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.card-img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+  filter: brightness(var(--img-bright));
+  transition: filter var(--trans-speed) ease-in-out;
+}
+
+/* ---------------------------------------------------- */
+/* Containers */
+.card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  align-content: flex-start;
+}
+
+.main-container {
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 16px;
 }
 
 /* ---------------------------------------------------- */
@@ -65,6 +103,7 @@ a, button {
   background-image: linear-gradient(to bottom, #85A94B, #495D29);
   padding: 0.125em 0.625em;
   border-radius: 1em;
+  text-align: center;
   /* border: 0px solid #4B3E2E; */
 }
 
@@ -72,10 +111,14 @@ button {
   padding: 1px 10px !important;
   border: 0;
 }
-.active {
+button:disabled {
   background-image: linear-gradient(to bottom, #273216, #647F39) !important;
   box-shadow: 0px 0px 5px rgba(173, 197, 134, 0.5), inset 4px 4px 15px rgba(0, 0, 0, 0.5) !important;
   cursor: default !important;
+}
+.disabled:hover {
+  box-shadow: 0px 0px 5px rgba(173, 197, 134, 0.5), inset 4px 4px 15px rgba(0, 0, 0, 0.5) !important;
+  filter: brightness(1);
 }
 
 a:hover, button:hover {
@@ -83,6 +126,14 @@ a:hover, button:hover {
   box-shadow: 0px 0.0625em 0.25em rgb(127, 127, 127);
   filter: brightness(1.2);
 }
+
+/* ---------------------------------------------------- */
+/* Icon */
+svg {
+  height: calc(var(--font-size) * 1.45);
+  width: calc(var(--font-size) * 1.45);
+  fill: #F3F6ED !important;
+};
 
 /* ---------------------------------------------------- */
 /* insert fields */

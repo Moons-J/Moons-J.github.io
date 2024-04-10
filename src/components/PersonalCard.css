@@ -1,0 +1,60 @@
+.personal-card {
+  max-width: 380px;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  align-content: flex-start;
+}
+
+.p-card-header {
+  width: 100%;
+  max-width: 200px;
+}
+
+.img-header {
+  border-radius: 0em 0em 8px 8px;
+}
+
+#head-shot {
+  /* max-height: 200px; */
+  width: 100%;
+  max-height: 170px;
+  /* object-fit: contain; */
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px 8px 0em 0em;
+  filter: brightness(var(--img-bright));
+  transition: filter var(--trans-speed) ease-in-out;
+}
+
+.personal-menu {
+  display:flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 16px;
+}
+
+.hidden {
+  mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+  height:  60px;
+  overflow-y: hidden;
+}
+
+.contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.1875em !important;
+    width: 2.1875em !important;
+    padding: 0px !important;
+  }
+}
