@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import PersonalCard from "../components/PersonalCard";
 import { CreateCard } from "../components/AboutCard";
 import "./AboutMe.css";
