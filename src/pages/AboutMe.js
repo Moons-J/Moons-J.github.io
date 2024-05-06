@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import PersonalCard from "../components/PersonalCard";
-import { CreateCard } from "../components/AboutCard";
+import { SmallCard } from "../components/SmallCard";
 import "./AboutMe.css";
 
 import { skills, certificates, awards } from "../data/About";
@@ -38,7 +38,7 @@ export default function AboutMe() {
     <div className="main-container" style={{ flexWrap: window.innerWidth < 519 ? 'wrap' : 'nowrap' }}>
       <PersonalCard buttonFunction={buttonFunction} />
       <div className="card-container">
-        <CreateCard data={data}/>
+        <SmallCard data={data}/>
       </div>
     </div>
   );
