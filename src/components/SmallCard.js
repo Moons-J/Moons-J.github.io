@@ -11,7 +11,7 @@ const endDate = new Date(today);
       <div className='small-card basic-card'>
         <img className="card-img" src={props.img || require('../data/data_icons/big-logo.svg').default} alt={props.title + " image."} />
         <div key={props.index}>
-          <h3>{props.title}</h3>
+          <h3>~ {props.title} ~</h3>
           {props.extra.map((item, index) => (
             <p>{item}</p>
           ))}
