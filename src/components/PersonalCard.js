@@ -35,8 +35,8 @@ const PersonalCard = (props) => {
       <div className="personal-menu">
         <PersonalCardMenu buttonFunction={props.buttonFunction}/>
       </div>
-      <div className="align-column">
-      <h4>Story:</h4>
+      <div>
+        <h4>Story:</h4>
         <p className="story hidden">Greetings! 👋🤩 I'm Jonas, a Junior full-stack developer and former quality expert in communication.
            On the 8th of December 2023, I completed the Le Wagon Full-Stack Developer Bootcamp.
            Enthusiastic and eager to learn, I bring a unique blend of technical skills and
@@ -46,6 +46,8 @@ const PersonalCard = (props) => {
            Please feel free to contact me for any questions.
            Thank you for reading. 😇
         </p>
+      </div>
+      <div className="align-column">
         <button className="story-button" onClick={toggleStory}>read more</button>
       </div>
       <div className="contact">
