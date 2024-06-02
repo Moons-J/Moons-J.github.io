@@ -1,12 +1,16 @@
 import React from "react";
+import aboutMeData from "../data/AboutMeData";
 
-const PersonalCardMenu = props => {
+const PersonalCardMenu = (props) => {
 
   return (
     <React.Fragment>
-      <button className="about-button" onClick={props.buttonFunction}>skills</button>
-      <button className="about-button" onClick={props.buttonFunction}>certificates</button>
-      <button className="about-button" onClick={props.buttonFunction}>awards</button>
+    {Object.keys(aboutMeData).map((key, index) => (
+      <button
+      className={`about-button ${index}`}
+      onClick={props.buttonFunction}>{key.toString()}
+      </button>
+    ))}
     </React.Fragment>
   );
 }

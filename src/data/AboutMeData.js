@@ -52,7 +52,7 @@ const aboutMeData = {
     {
       id: 1,
       img: require('../data/data_icons/standard.svg').default,
-      title: '',
+      title: 'Test Hobby',
       date: '',
       extra: [
         'Acquired: ',
@@ -66,7 +66,7 @@ const aboutMeData = {
     {
       id: 1,
       img: require('../data/data_icons/standard.svg').default,
-      title: '',
+      title: 'Test Goal',
       date: '',
       extra: [
         'Acquired: ',
