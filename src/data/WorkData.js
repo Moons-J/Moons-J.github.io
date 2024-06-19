@@ -1,4 +1,4 @@
-const workData = {
+const WorkData = {
 
   skills: [
     {
@@ -87,4 +87,4 @@ const workData = {
   ],
 };
 
-export default workData;
+export default WorkData;

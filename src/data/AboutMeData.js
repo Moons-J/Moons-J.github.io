@@ -1,7 +1,7 @@
 // import React from 'react'
 // import { ReactComponent as MenuIcon } from ".";
-const aboutMeData = {
-  
+const AboutMeData = {
+
   hobbies: [
     {
       id: 1,
@@ -44,4 +44,4 @@ const aboutMeData = {
     }
   ]
 };
-export default aboutMeData ;
+export default AboutMeData ;

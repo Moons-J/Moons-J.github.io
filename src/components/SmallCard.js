@@ -21,26 +21,10 @@ const endDate = new Date(today);
     );
   };
 
-  const SmallCards = (data) => {
-    return (
-      <React.Fragment>
-        {data.data.map((item) => (
-          <SmallCard
-            key={item.id}
-            img={item.img}
-            date={item.date}
-            title={item.title}
-            extra={item.extra}
-          />
-        ))}
-      </React.Fragment>
-    );
-  };
-
   // <p><u>Acquired:</u> {data.origin}</p>
   // <p><u>Used:</u> {data.extra}</p>
   // <p><u>From:</u> {data.date} <i>~ m/d/y ~</i></p>
   // <p><u>Experience:</u> {monthsDiff} months</p>
   // {/* <p><u>Last used: </u>{today}</p> */}
 
-export { SmallCards };
+export default SmallCard;

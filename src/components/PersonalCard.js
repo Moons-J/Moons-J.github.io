@@ -33,7 +33,7 @@ const PersonalCard = (props) => {
         <h2 className="img-header">{pathTitle}</h2>
       </div>
       <div className="personal-menu">
-        <PersonalCardMenu buttonFunction={props.buttonFunction}/>
+        <PersonalCardMenu buttonFunction={props.buttonFunction} allData={props.allData}/>
       </div>
       <div>
         <h4>Story:</h4>
