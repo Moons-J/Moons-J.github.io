@@ -11,9 +11,7 @@ import { ReactComponent as EmailIcon } from '../icons/email.svg'
 
 
 const PersonalCard = (props) => {
-  var fullUrl = window.location.href;
-  var path = fullUrl.split('/').pop();
-  var pathTitle = path.split('-').join(' ');
+  var pathTitle = window.location.href.split('/').pop().split('-').join(' ');
 
   const toggleStory = () => {
     const story = document.querySelector('.story');
