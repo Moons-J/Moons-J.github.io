@@ -9,7 +9,7 @@ const DataContainer = (props) => {
   console.log(pathTitle);
 
   function CardPicker(params) {
-    if (pathTitle === 'about me') {
+    if (pathTitle === 'my work') {
       return props.data.map((item) => (
         <SmallCard
           key={item.id}
@@ -20,10 +20,12 @@ const DataContainer = (props) => {
         />
       ))
     } else {
-      return <BigCard
+      return props.data.map((item) => (
+      <BigCard
         key={params.id}
         title={params.title}
       />
+      ))
     }
   }
 
