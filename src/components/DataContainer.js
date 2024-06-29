@@ -8,7 +8,7 @@ const DataContainer = (props) => {
   var pathTitle = window.location.href.split('/').pop().split('-').join(' ');
   console.log(pathTitle);
 
-  function CardPicker(params) {
+  function CardPicker() {
     if (pathTitle === 'my work') {
       return props.data.map((item) => (
         <SmallCard
@@ -21,10 +21,12 @@ const DataContainer = (props) => {
       ))
     } else {
       return props.data.map((item) => (
-      <BigCard
-        key={params.id}
-        title={params.title}
-      />
+        <BigCard
+          key={item.id}
+          title={item.title}
+          top={item.top}
+          description={item.description}
+        />
       ))
     }
   }
