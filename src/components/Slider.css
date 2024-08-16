@@ -1,0 +1,20 @@
+.big-card-image {
+  min-width: 200px;
+  max-width: 256px;
+  width: 19vw;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px 8px 0em 0em;
+}
+
+.carousel {
+  min-width: 200px;
+  max-width: 256px;
+  width: 19vw;
+  height: 200px;
+
+}
+
+.carousel-indicators {
+margin-bottom: 0em !important;
+}
