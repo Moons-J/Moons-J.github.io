@@ -1,103 +1,152 @@
-// import React from 'react'
-// import { ReactComponent as MenuIcon } from ".";
 const AboutMeData = {
 
   hobbies: [
     {
       id: 1,
-      img: require('../data/data_icons/standard.svg').default,
+      img: [require('../data/data_images/tr1.jpeg'),
+      require('../data/data_images/tr2.jpeg'),
+      require('../data/data_images/tr3.jpeg'),
+      require('../data/data_images/tr4.jpeg'),
+      require('../data/data_images/tr5.jpeg'),
+      require('../data/data_images/tr6.jpeg'),
+      require('../data/data_images/tr7.jpeg'),
+      require('../data/data_images/tr8.jpeg')
+      ],
       title: 'Traveling',
       top: [
-        '1: Experiancing new cultures',
-        '2: Adventure',
-        '3: Living in the moment',
+        '1. Experiancing new cultures',
+        '2. Adventure',
+        '3. Living in the moment',
       ],
-      description: 'I love to travel, especially with my girlfriend. We enjoy doing activities almost every day, making the most of every moment. Sure, a day at the beach is nice, but we really thrive on adventure and new experiences together.',
+      why: 'Traveling is amazing, especially with my girlfriend. My holidays have to be filled with activaties, making the most of every moment. Sure, a day at the beach is amazing and relaxing, but we really thrive on adventure and new experiences together.',
     },
     {
-      id: 1,
-      img: require('../data/data_icons/standard.svg').default,
+      id: 2,
+      img:  [require('../data/data_images/sk1.jpeg'),
+        require('../data/data_images/sk2.jpeg'),
+        require('../data/data_images/sk3.jpeg')
+      ],
       title: 'Skiing',
       top: [
-        '1: ',
-        '2: ',
-        '3: ',
+        '1. The sport itself',
+        '2. Mountain views',
+        '3. Apre ski',
       ],
-      description: '',
+      why: '...',
     },
     {
-      id: 1,
-      img: require('../data/data_icons/standard.svg').default,
+      id: 3,
+      img: [require('../data/data_images/hi1.jpeg'),
+        require('../data/data_images/hi2.jpeg'),
+        require('../data/data_images/hi3.jpeg'),
+        require('../data/data_images/hi4.jpeg'),
+        require('../data/data_images/hi5.jpeg'),
+        require('../data/data_images/hi6.jpeg'),
+        ],
       title: 'Hiking',
       top: [
-        '1: ',
-        '2: ',
-        '3: ',
+        '1. Getting in touch with nature',
+        '2. Pushing personal limits',
+        '3. Fresh air',
       ],
-      description: ''
+      why: '...'
     },
     {
-      id: 1,
-      img: require('../data/data_icons/standard.svg').default,
-      title: 'Camping',
-      top: [
-        '1: ',
-        '2: ',
-        '3: ',
+      id: 4,
+      img: [require('../data/data_images/co1.jpeg'),
+        require('../data/data_images/co2.jpeg')
       ],
-      description: '',
-    },
-    {
-      id: 1,
-      img: require('../data/data_icons/standard.svg').default,
       title: 'Coding',
       top: [
-        '1: ',
-        '2: ',
-        '3: ',
+        '1. Everything is possible',
+        '2. Creating something from nothing',
+        '3. Brain teasers',
       ],
-      description: '',
+      why: '...',
     },
     {
-      id: 1,
-      img: require('../data/data_icons/standard.svg').default,
+      id: 5,
+      img: [require('../data/data_images/ph1.jpeg'),
+        require('../data/data_images/ph2.jpeg'),
+        require('../data/data_images/ph3.jpeg'),
+        require('../data/data_images/ph4.jpeg')
+      ],
       title: 'Personal Health',
       top: [
-        '1: ',
-        '2: ',
-        '3: ',
+        '1. Feeling energized and healthy',
+        '2. Can perform better',
+        '3. Feeling good about myself',
       ],
-      description: '',
+      why: '...',
     },
-
+    {
+      id: 6,
+      img: [require('../data/data_images/gt1.jpeg'),
+        require('../data/data_images/gt2.jpeg'),
+        require('../data/data_images/gt3.jpeg'),
+        require('../data/data_images/gt4.jpeg'),
+        require('../data/data_images/gt5.jpeg'),
+        require('../data/data_images/gt6.jpeg'),
+        require('../data/data_images/gt7.jpeg')
+      ],
+      title: 'Having a good time.',
+      top: [
+        '1. Strengthening relationships',
+        '2. Finding joy in the little things',
+        '3. Meeting new people',
+      ],
+      why: '...',
+    }
   ],
 
   goals: [
     {
       id: 1,
-      img: require('../data/data_icons/standard.svg').default,
-      title: 'Test Goal',
+      img: [require('../data/data_images/pc1.jpeg')],
+      title: 'Become a proffesional coder',
       top: [
-        '1: ',
-        '2: ',
-        '3: ',
+        '1. Having a job where I can be creative',
+        '2. Collaborating with colleagues to find the ultimate solution',
+        '3. Making a career out of my hobby',
       ],
-      description: '',
+      why: '...',
     },
-  ],
-
-  extra: [
     {
-      id: 1,
-      img:  require('../data/data_icons/standard.svg').default,
-      title: 'Test Extra',
+      id: 2,
+      img: [require('../data/data_images/es1.jpeg')],
+      title: 'Speak fluent Spanish',
       top: [
-        '1: ',
-        '2: ',
-        '3: ',
+        '1. Verry beautiful language',
+        '2. Get more in touch with Spanish culture',
+        '3. Making new friends',
       ],
-      description: '',
-    }
+      why: '...',
+    },
+    {
+      id: 3,
+      img: [require('../data/data_images/bh1.jpeg')],
+      title: 'Getting in the best shape of my life',
+      top: [
+        '1. Looking gooooood 😂',
+        '2. Keep all my hobbies for as long as I can.',
+        '3. Being able to keep up with my future kids',
+      ],
+      why: '...',
+    },
+  // ],
+
+  // extra: [
+  //   {
+  //     id: 1,
+  //     img: [require('../data/data_icons/standard.svg').default],
+  //     title: 'Test Extra',
+  //     top: [
+  //       '1. ',
+  //       '2. ',
+  //       '3. ',
+  //     ],
+  //     why: '...',
+  //   }
   ]
 };
-export default AboutMeData ;
+export default AboutMeData;
