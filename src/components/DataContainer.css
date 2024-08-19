@@ -1,7 +1,10 @@
 .secondary-container {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  align-items: center;
+}
+
+.data-title {
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
 }
