@@ -4,9 +4,9 @@ import '../index.css'
 import SmallCard from "./SmallCard"
 import BigCard from "./BigCard"
 
+
 const DataContainer = (props) => {
   var pathTitle = window.location.href.split('/').pop().split('-').join(' ');
-  console.log(pathTitle);
 
   function CardPicker() {
     if (pathTitle === 'my work') {
@@ -23,6 +23,7 @@ const DataContainer = (props) => {
       return props.data.map((item) => (
         <BigCard
           key={item.id}
+          img={item.img}
           title={item.title}
           top={item.top}
           description={item.description}
@@ -33,10 +34,10 @@ const DataContainer = (props) => {
 
   return (
     <div className="secondary-container">
-      <h2 className="center-position">{props.dataTitle.toString()}</h2>
-        <div className="card-container">
-          {CardPicker(props)}
-        </div>
+      <h2 className="data-title">{props.dataTitle.toString()}</h2>
+      <div className="card-container">
+        {CardPicker(props)}
+      </div>
     </div>
   );
 };
