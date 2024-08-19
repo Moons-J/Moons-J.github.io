@@ -76,12 +76,16 @@ body {
 /* ---------------------------------------------------- */
 /* Containers */
 .card-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(232px, 1fr));
+  grid-gap: 16px;
+
+  /* display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 16px;
   align-items: center;
-  align-content: flex-start;
+  align-content: flex-start; */
 }
 
 .main-container {
