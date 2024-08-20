@@ -89,7 +89,7 @@ const AboutMeData = {
         require('../data/data_images/gt6.jpeg'),
         require('../data/data_images/gt7.jpeg')
       ],
-      title: 'Having a good time.',
+      title: "Good time's",
       top: [
         '1. Strengthening relationships',
         '2. Finding joy in the little things',
@@ -128,11 +128,11 @@ const AboutMeData = {
       title: 'Getting in the best shape of my life',
       top: [
         '1. Looking gooooood 😂',
-        '2. Keep all my hobbies for as long as I can.',
+        '2. Keep all my hobbies for as long as I can',
         '3. Being able to keep up with my future kids',
       ],
       why: '...',
-    },
+    }
   // ],
 
   // extra: [

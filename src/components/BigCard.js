@@ -6,13 +6,13 @@ const BigCard = (props) => {
   return (
     <div className='big-card basic-card'>
       <div className='title-box'>
+        <h2>{props.title.toLowerCase()}</h2>
         <div className='img-box'>
           {props.img.length === 1 ? (
             <img className="big-card-image" src={props.img[0]} alt={props.title} />
           ) : (
             <Slider images={props.img} />
           )}
-          <div><h2 className="img-header">~ {props.title.toLowerCase()} ~</h2></div>
         </div>
       </div>
       <div className='fav-display'>
