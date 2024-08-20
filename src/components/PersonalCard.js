@@ -11,9 +11,7 @@ import { ReactComponent as EmailIcon } from '../icons/email.svg'
 
 
 const PersonalCard = (props) => {
-  var fullUrl = window.location.href;
-  var path = fullUrl.split('/').pop();
-  var pathTitle = path.split('-').join(' ');
+  var pathTitle = window.location.href.split('/').pop().split('-').join(' ');
 
   const toggleStory = () => {
     const story = document.querySelector('.story');
@@ -33,10 +31,10 @@ const PersonalCard = (props) => {
         <h2 className="img-header">{pathTitle}</h2>
       </div>
       <div className="personal-menu">
-        <PersonalCardMenu buttonFunction={props.buttonFunction}/>
+        <PersonalCardMenu buttonFunction={props.buttonFunction} allData={props.allData}/>
       </div>
-      <div className="align-column">
-      <h4>Story:</h4>
+      <div>
+        <h4>Story:</h4>
         <p className="story hidden">Greetings! 👋🤩 I'm Jonas, a Junior full-stack developer and former quality expert in communication.
            On the 8th of December 2023, I completed the Le Wagon Full-Stack Developer Bootcamp.
            Enthusiastic and eager to learn, I bring a unique blend of technical skills and
@@ -46,6 +44,8 @@ const PersonalCard = (props) => {
            Please feel free to contact me for any questions.
            Thank you for reading. 😇
         </p>
+      </div>
+      <div className="align-column">
         <button className="story-button" onClick={toggleStory}>read more</button>
       </div>
       <div className="contact">

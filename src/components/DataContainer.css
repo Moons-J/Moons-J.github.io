@@ -1,0 +1,10 @@
+.secondary-container {
+  width: 100%;
+}
+
+.data-title {
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}

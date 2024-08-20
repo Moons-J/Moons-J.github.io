@@ -1,45 +1,31 @@
 import React, { useState } from "react";
 import PersonalCard from "../components/PersonalCard";
-import { CreateCard } from "../components/AboutCard";
+import DataContainer from "../components/DataContainer";
+import aboutMeData from "../data/AboutMeData";
+
 import "./AboutMe.css";
 
-import { skills, certificates, awards } from "../data/About";
-
 export default function AboutMe() {
-  const [data, setData] = useState(skills);
+  const [data, setData] = useState(Object.values(aboutMeData)[0]);
+  const [dataTitle, setDataTitle] = useState(Object.keys(aboutMeData)[0]);
+  const allData = aboutMeData;
 
   function buttonFunction(event) {
     const buttons = document.querySelectorAll('.about-button');
+
     buttons.forEach(button => {
       button.disabled = false;
     });
     event.target.disabled = true;
-    const buttonText = event.target.textContent;
-    if (buttonText === 'skills') {
-      setData(skills);
-    } else if (buttonText === 'certificates') {
-      setData(certificates);
-    } else if (buttonText === 'awards') {
-      setData(awards);
-    } else {
-      setData(skills);
-    }
+    setData(Object.values(aboutMeData)[event.target.className.slice(-1)]);
+    setDataTitle(Object.keys(aboutMeData)[event.target.className.slice(-1)]);
     return
   };
 
-  // useEffect(() => {
-  //   // Code to handle rerendering of cards when data changes
-  //   console.log(data);
-
-  //   // optional return function
-  // }, [data]); // the button in menu
-
   return (
     <div className="main-container" style={{ flexWrap: window.innerWidth < 519 ? 'wrap' : 'nowrap' }}>
-      <PersonalCard buttonFunction={buttonFunction} />
-      <div className="card-container">
-        <CreateCard data={data}/>
-      </div>
+      <PersonalCard buttonFunction={buttonFunction} allData={allData}/>
+      <DataContainer data={data} dataTitle={dataTitle}/>
     </div>
   );
 }
