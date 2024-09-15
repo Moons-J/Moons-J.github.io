@@ -12,7 +12,7 @@ export default function ErrorPage() {
   };
 
   return (
-    <div id="error-page" className="flex-center">
+    <div id="error-page" className="flex-center container">
       <div className="basic-card align-column">
         <h1>Oops!</h1>
         <p>Sorry, an unexpected error has occurred.</p>

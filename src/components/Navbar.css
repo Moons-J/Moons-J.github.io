@@ -1,4 +1,5 @@
 .navbar {
+  z-index: 2;
   min-height: 3.125em;
   margin-bottom: 16px;
   background-color: var(--ca-color);

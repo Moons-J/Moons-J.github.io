@@ -11,7 +11,7 @@ import './App.css';
 
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-import { NavItem, DropdownMenu }from './components/NavItem';
+import { NavItem, DropdownMenu } from './components/NavItem';
 
 // Pages
 import Home from './pages/Home';
@@ -47,17 +47,15 @@ function App() {
 
   return (
     <div className="App" data-theme={isDark ? "dark" : "light"}>
-        <Navbar isDark={isDark} setIsDark={setIsDark}>
-          <NavItem icon={<MenuIcon />}>
-            <DropdownMenu></DropdownMenu>
-          </NavItem>
-        </Navbar>
-        <div className="container">
-          <RouterProvider router={router} />
-        </div>
-        <Footer />
-      </div>
+      <Navbar isDark={isDark} setIsDark={setIsDark}>
+        <NavItem icon={<MenuIcon />}>
+          <DropdownMenu></DropdownMenu>
+        </NavItem>
+      </Navbar>
+      <RouterProvider router={router} />
+      <Footer />
+    </div>
   );
 }
 
-  export default App;
+export default App;

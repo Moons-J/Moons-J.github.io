@@ -1,5 +1,5 @@
 .home-card {
+  z-index: 1;
   max-width: 15.625em;
-  margin-top: 20vh;
   text-align: center;
 }
