@@ -23,7 +23,7 @@ export default function AboutMe() {
   };
 
   return (
-    <div className="main-container" style={{ flexWrap: window.innerWidth < 519 ? 'wrap' : 'nowrap' }}>
+    <div className="main-container container" style={{ flexWrap: window.innerWidth < 519 ? 'wrap' : 'nowrap' }}>
       <PersonalCard buttonFunction={buttonFunction} allData={allData}/>
       <DataContainer data={data} dataTitle={dataTitle}/>
     </div>
