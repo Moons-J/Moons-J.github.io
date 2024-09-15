@@ -11,9 +11,9 @@
 
 .title-box {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  flex-wrap: nowrap;
   gap: 8px;
 }
 
