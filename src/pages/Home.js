@@ -5,6 +5,7 @@ import "./Home.css";
 export default function Home() {
   return (
     <div>
+    <div className="overlay"></div>
       <video className="video-bg" src={videoBG} autoPlay loop muted />
       <div className="Home flex-center container">
         <HomeCard />
