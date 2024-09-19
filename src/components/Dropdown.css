@@ -6,7 +6,7 @@
   transition: background-color var(--trans-speed) ease-in-out, box-shadow var(--trans-speed) ease-in-out;
   position: absolute;
   top: 2.1em;
-  width: 12em;
+  width: max-content;
   transform: translateX(-46%);
   overflow: hidden;
   z-index: 1;
@@ -23,6 +23,6 @@
   display: flex;
   gap: 0.5em;
   align-items: center;
-  padding: 0.5em;
-  justify-content: space-between;
+  padding: 0.5em 0.8em 0.5em 0.8em;
+  justify-content: flex-start;
 }
