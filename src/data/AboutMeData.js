@@ -3,14 +3,14 @@ const AboutMeData = {
   hobbies: [
     {
       id: 1,
-      img: [require('../data/data_images/tr1.jpeg'),
-      require('../data/data_images/tr2.jpeg'),
-      require('../data/data_images/tr3.jpeg'),
-      require('../data/data_images/tr4.jpeg'),
-      require('../data/data_images/tr5.jpeg'),
-      require('../data/data_images/tr6.jpeg'),
-      require('../data/data_images/tr7.jpeg'),
-      require('../data/data_images/tr8.jpeg')
+      img: [require('../data/data_images/hobbies/tr1.jpeg'),
+      require('../data/data_images/hobbies/tr2.jpeg'),
+      require('../data/data_images/hobbies/tr3.jpeg'),
+      require('../data/data_images/hobbies/tr4.jpeg'),
+      require('../data/data_images/hobbies/tr5.jpeg'),
+      require('../data/data_images/hobbies/tr6.jpeg'),
+      require('../data/data_images/hobbies/tr7.jpeg'),
+      require('../data/data_images/hobbies/tr8.jpeg')
       ],
       title: 'Traveling',
       top: [
@@ -22,9 +22,9 @@ const AboutMeData = {
     },
     {
       id: 2,
-      img:  [require('../data/data_images/sk1.jpeg'),
-        require('../data/data_images/sk2.jpeg'),
-        require('../data/data_images/sk3.jpeg')
+      img:  [require('../data/data_images/hobbies/sk1.jpeg'),
+        require('../data/data_images/hobbies/sk2.jpeg'),
+        require('../data/data_images/hobbies/sk3.jpeg')
       ],
       title: 'Skiing',
       top: [
@@ -36,12 +36,12 @@ const AboutMeData = {
     },
     {
       id: 3,
-      img: [require('../data/data_images/hi1.jpeg'),
-        require('../data/data_images/hi2.jpeg'),
-        require('../data/data_images/hi3.jpeg'),
-        require('../data/data_images/hi4.jpeg'),
-        require('../data/data_images/hi5.jpeg'),
-        require('../data/data_images/hi6.jpeg'),
+      img: [require('../data/data_images/hobbies/hi1.jpeg'),
+        require('../data/data_images/hobbies/hi2.jpeg'),
+        require('../data/data_images/hobbies/hi3.jpeg'),
+        require('../data/data_images/hobbies/hi4.jpeg'),
+        require('../data/data_images/hobbies/hi5.jpeg'),
+        require('../data/data_images/hobbies/hi6.jpeg'),
         ],
       title: 'Hiking',
       top: [
@@ -53,8 +53,8 @@ const AboutMeData = {
     },
     {
       id: 4,
-      img: [require('../data/data_images/co1.jpeg'),
-        require('../data/data_images/co2.jpeg')
+      img: [require('../data/data_images/hobbies/co1.jpeg'),
+        require('../data/data_images/hobbies/co2.jpeg')
       ],
       title: 'Coding',
       top: [
@@ -66,10 +66,10 @@ const AboutMeData = {
     },
     {
       id: 5,
-      img: [require('../data/data_images/ph1.jpeg'),
-        require('../data/data_images/ph2.jpeg'),
-        require('../data/data_images/ph3.jpeg'),
-        require('../data/data_images/ph4.jpeg')
+      img: [require('../data/data_images/hobbies/ph1.jpeg'),
+        require('../data/data_images/hobbies/ph2.jpeg'),
+        require('../data/data_images/hobbies/ph3.jpeg'),
+        require('../data/data_images/hobbies/ph4.jpeg')
       ],
       title: 'Personal Health',
       top: [
@@ -81,13 +81,13 @@ const AboutMeData = {
     },
     {
       id: 6,
-      img: [require('../data/data_images/gt1.jpeg'),
-        require('../data/data_images/gt2.jpeg'),
-        require('../data/data_images/gt3.jpeg'),
-        require('../data/data_images/gt4.jpeg'),
-        require('../data/data_images/gt5.jpeg'),
-        require('../data/data_images/gt6.jpeg'),
-        require('../data/data_images/gt7.jpeg')
+      img: [require('../data/data_images/hobbies/gt1.jpeg'),
+        require('../data/data_images/hobbies/gt2.jpeg'),
+        require('../data/data_images/hobbies/gt3.jpeg'),
+        require('../data/data_images/hobbies/gt4.jpeg'),
+        require('../data/data_images/hobbies/gt5.jpeg'),
+        require('../data/data_images/hobbies/gt6.jpeg'),
+        require('../data/data_images/hobbies/gt7.jpeg')
       ],
       title: "Good time's",
       top: [
@@ -102,7 +102,7 @@ const AboutMeData = {
   goals: [
     {
       id: 1,
-      img: [require('../data/data_images/pc1.jpeg')],
+      img: [require('../data/data_images/goals/pc1.jpeg')],
       title: 'Become a proffesional coder',
       top: [
         '1. Having a job where I can be creative',
@@ -113,7 +113,7 @@ const AboutMeData = {
     },
     {
       id: 2,
-      img: [require('../data/data_images/es1.jpeg')],
+      img: [require('../data/data_images/goals/es1.jpeg')],
       title: 'Speak fluent Spanish',
       top: [
         '1. Verry beautiful language',
@@ -124,7 +124,7 @@ const AboutMeData = {
     },
     {
       id: 3,
-      img: [require('../data/data_images/bh1.jpeg')],
+      img: [require('../data/data_images/goals/bh1.jpeg')],
       title: 'Getting in the best shape of my life',
       top: [
         '1. Looking gooooood 😂',

@@ -14,7 +14,7 @@ const WorkData = {
     },
     {
       id: 2,
-      img: require("../data/data_icons/ruby.svg").default,
+      img: require("../data/data_icons/skills/ruby.svg").default,
       title: "Ruby and Ruby on Rails",
       date: "10/09/2023",
       extra: [
@@ -25,7 +25,7 @@ const WorkData = {
     },
     {
       id: 3,
-      img: require("../data/data_icons/node-js.svg").default,
+      img: require("../data/data_icons/skills/node-js.svg").default,
       title: 'Node JS',
       date: '10/09/2023',
       extra: [
@@ -36,7 +36,7 @@ const WorkData = {
     },
     {
       id: 4,
-      img: require("../data/data_icons/react.svg").default,
+      img: require("../data/data_icons/skills/react.svg").default,
       title: 'React',
       date: '02/07/2024',
       extra: [
@@ -50,7 +50,7 @@ const WorkData = {
   projects: [
     {
       id: 1,
-      img: require('../data/data_icons/standard.svg').default,
+      img: require('../data/data_icons/projects/my-new-meal-plan-logo.svg').default,
       title: 'My New Meal Plan',
       date: '',
       extra: [
@@ -61,7 +61,7 @@ const WorkData = {
     },
     {
       id: 2,
-      img: require('../data/data_icons/standard.svg').default,
+      img: require('../data/data_icons/projects/protfolio-logo.svg').default,
       title: 'Portfolio',
       date: '',
       extra: [
