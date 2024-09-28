@@ -15,6 +15,7 @@ const DataContainer = (props) => {
           img={item.img}
           date={item.date}
           link={item.link}
+          role={item.role}
           title={item.title}
           extra={item.extra}
         />

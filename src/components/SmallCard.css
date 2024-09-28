@@ -9,6 +9,7 @@
   align-content: flex-start;
   justify-content: space-between;
   align-items: flex-start;
+
   a, button {
     display: flex;
     justify-content: center;
@@ -24,4 +25,10 @@
   width: 100%;
   justify-content: space-between;
   align-items: flex-start;
+}
+
+.gap {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
 }

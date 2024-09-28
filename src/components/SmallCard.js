@@ -16,13 +16,16 @@ const SmallCard = (props) => {
         <img className="card-svg" src={props.img || require('../data/data_icons/projects/protfolio-logo.svg').default} alt={props.title + " image."} />
         {/* {console.log(props)} */}
         {props.link ? (
-          <a href={props.link} target="_blank" rel="noreferrer"><LinkIcon/></a>
+          <a href={props.link} target="_blank" rel="noreferrer"><LinkIcon /></a>
         ) : (
-          <button className="disabled"><CloseIcon/></button>
+          <button className="disabled"><CloseIcon /></button>
         )}
       </div>
-      <div key={props.index}>
+      <div className="gap">
         <h3>~ {props.title} ~</h3>
+        {props.role ? (
+          <h4>Role: {props.role}</h4>
+        ) : null}
         {props.extra.map((item, index) => (
           <p key={index}>{item}</p>
         ))}
