@@ -64,12 +64,12 @@ body {
   gap: 16px;
 }
 
-.card-img {
+.card-svg {
   width: 100px;
   height: 100px;
   object-fit: cover;
   border-radius: 8px;
-  filter: brightness(var(--img-bright));
+  filter: brightness(var(--img-bright)) drop-shadow(0px 0.0625em 0.25em rgb(127, 127, 127));
   transition: filter var(--trans-speed) ease-in-out;
 }
 
@@ -135,7 +135,7 @@ a:hover, button:hover {
 svg {
   height: calc(var(--font-size) * 1.45);
   width: calc(var(--font-size) * 1.45);
-  fill: #F3F6ED !important;
+  /* fill: #F3F6ED !important; */
 };
 
 /* ---------------------------------------------------- */
