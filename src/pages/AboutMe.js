@@ -11,12 +11,6 @@ export default function AboutMe() {
   const allData = aboutMeData;
 
   function buttonFunction(event) {
-    const buttons = document.querySelectorAll('.about-button');
-
-    buttons.forEach(button => {
-      button.disabled = false;
-    });
-    event.target.disabled = true;
     setData(Object.values(aboutMeData)[event.target.className.slice(-1)]);
     setDataTitle(Object.keys(aboutMeData)[event.target.className.slice(-1)]);
     return
