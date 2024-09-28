@@ -7,7 +7,6 @@ import BigCard from "./BigCard"
 
 const DataContainer = (props) => {
   var pathTitle = window.location.href.split('/').pop().split('-').join(' ');
-
   function CardPicker() {
     if (pathTitle === 'my work') {
       return props.data.map((item) => (
@@ -15,6 +14,7 @@ const DataContainer = (props) => {
           key={item.id}
           img={item.img}
           date={item.date}
+          link={item.link}
           title={item.title}
           extra={item.extra}
         />

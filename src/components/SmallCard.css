@@ -5,4 +5,23 @@
   flex-shrink: 1;
   gap: 16px;
   min-width: 164px;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: space-between;
+  align-items: flex-start;
+  a, button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.1875em !important;
+    width: 2.1875em !important;
+    padding: 0px !important;
+  }
+}
+
+.small-card-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
 }
