@@ -2,7 +2,6 @@ import React from "react";
 import './SmallCard.css';
 
 import { ReactComponent as LinkIcon } from '../icons/link.svg';
-import { ReactComponent as CloseIcon } from '../icons/close.svg';
 
 // const today = new Date().toLocaleDateString();
 // const endDate = new Date(today);
