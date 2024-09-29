@@ -17,8 +17,8 @@ const BigCard = (props) => {
       </div>
       <div className='fav-display'>
         <h3>Top 3 favorite parts:</h3>
-        {props.top.map((item) => (
-          <h5>{item}</h5>
+        {props.top.map((item, index) => (
+          <h5 key={index}>{item}</h5>
         ))}
       </div>
       {/* <div className='desc-box'>

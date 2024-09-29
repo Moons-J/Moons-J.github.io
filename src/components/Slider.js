@@ -7,7 +7,7 @@ function Slider(props) {
   return (
     <Carousel>
       {props.images.map((item, index) => (
-        <Carousel.Item interval="86400000">
+        <Carousel.Item  key={index} interval="86400000">
           <img
             className="big-card-image"
             src={item}
