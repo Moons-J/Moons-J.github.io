@@ -1,6 +1,7 @@
 import React from "react";
 
 const PersonalCardMenu = (props) => {
+
   function clickFunction(event) {
     props.buttonFunction(event);
     event.target.classList.add('disabled');
@@ -17,7 +18,7 @@ const PersonalCardMenu = (props) => {
       {Object.keys(props.allData).map((key, index) => (
         <button
           key={index}
-          className={`about-button ${index}`}
+          className={`${index === 0 ? 'disabled' : ''} about-button ${index}`}
           onClick={clickFunction}
         >{key.toString()}
         </button>

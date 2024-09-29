@@ -18,7 +18,7 @@ const SmallCard = (props) => {
         {props.link ? (
           <a href={props.link} target="_blank" rel="noreferrer"><LinkIcon /></a>
         ) : (
-          <button className="disabled"><CloseIcon /></button>
+          <button className="locked">x</button>
         )}
       </div>
       <div className="gap">
