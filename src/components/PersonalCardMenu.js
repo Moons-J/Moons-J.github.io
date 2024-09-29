@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 
 const PersonalCardMenu = (props) => {
   function clickFunction(event) {
